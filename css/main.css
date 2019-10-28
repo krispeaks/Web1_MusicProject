@@ -97,9 +97,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header{
+  background-color: #02ACF0;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  }.navbar{
-  width: 80%;
+.navbar{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,9 +114,15 @@ textarea {
 
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar a{
   color: #FFFFFF;
-  font-family: 'Barlow Semi' , condensed;
+  font-family: Barlow Semi Condensed;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -117,7 +130,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 6px;
+  margin: 30px;
   text-decoration: none;
 
 }
@@ -127,17 +140,92 @@ textarea {
 }
 
 .Hero{
-  height: 100vh;
+height: 700px;
 display: flex;
 justify-content: center;
 align-items: center;
 margin: 0 auto;
-background-image: url('Rectangle 3.png');
+background-image: url('../img/beatleshero.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 overflow: none;
 }
+
+.hero_cta{
+  text-align: center;
+}
+
+.hero_cta{
+position: absolute;
+width: 1338px;
+height: 165px;
+left: 60px;
+top: 572px;
+font-family: Aladin;
+font-style: normal;
+font-weight: light;
+font-size: 150px;
+line-height: 353px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.55);
+}
+
+
+#title1{
+position: absolute;
+width: 478px;
+height: 189px;
+left: 191px;
+top: 1316px;
+font-family: Alegreya;
+font-style: normal;
+font-weight: bold;
+font-size: 85px;
+line-height: 116px;
+text-align: center;
+color: #FFEE9B;
+text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
+transform: rotate(-90deg);
+}
+
+
+
+
+#Paragraph1{
+  margin: 50px;
+  justify-content: center;
+}
+
+.About_Section{
+width: 100%;
+align-items: center;
+background: linear-gradient(180deg, #E459AB 17.71%, #FFFFFF 95.83%), #E459AB;
+}
+
+.Section_2 h3{
+position: absolute;
+width: 297px;
+height: 118px;
+left: 588px;
+top: 1525px;
+font-family: Aladin;
+font-style: normal;
+font-weight: normal;
+font-size: 110px;
+line-height: 135px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FF9AD6;
+text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.65);
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
