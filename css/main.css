@@ -104,6 +104,11 @@ header{
   align-items: center;
   margin: 0 auto;
 }
+h1,
+h2,
+h3{
+  margin: 0 auto;
+}
 
 .navbar{
   width: 100%;
@@ -176,20 +181,15 @@ text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.55);
 
 
 #title1{
-position: absolute;
-width: 478px;
-height: 189px;
-left: 191px;
-top: 1316px;
 font-family: Alegreya;
 font-style: normal;
 font-weight: bold;
-font-size: 85px;
-line-height: 116px;
+font-size: 60px;
 text-align: center;
 color: #FFEE9B;
 text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.55);
 transform: rotate(-90deg);
+margin: 0 auto;
 }
 
 
@@ -200,10 +200,35 @@ transform: rotate(-90deg);
   justify-content: center;
 }
 
+
 .About_Section{
 width: 100%;
 align-items: center;
 background: linear-gradient(180deg, #E459AB 17.71%, #FFFFFF 95.83%), #E459AB;
+margin: 0 auto;
+padding: 10px;
+display: flex;
+}
+
+.Sectionbox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+padding: 2%;
+}
+
+.Tour_Sec{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url('../img/hero section 2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: none;
 }
 
 .Section_2 h3{
@@ -224,8 +249,107 @@ color: #FF9AD6;
 text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.65);
 }
 
+.Tour_dates{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+font-family: Maven Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
 
 
+#P1,
+#P2{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  margin: 10px
+}
+
+
+.Fans_Section{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url('../img/hero section 3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: none;
+}
+
+.Fans{
+position: absolute;
+width: 384px;
+height: 84px;
+left: 545px;
+top: 2211px;
+font-family: Aladin;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: 118px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFEE9B;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+}
+
+#F1{
+position: absolute;
+width: 480px;
+height: 88px;
+left: 207px;
+top: 2354px;
+font-family: Noticia Text;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+
+footer{
+position: absolute;
+width: 1474px;
+height: 43px;
+left: 0px;
+top: 2942px;
+background: #FF7000;
+margin: 0 auto;
+}
+
+footer p{
+font-family: Maven Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
