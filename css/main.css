@@ -166,12 +166,16 @@
     text-align: center;
   }
 
+
+.hero_cta:hover {
+  color: #E459AB
+}
   .hero_cta {
     width: 100%;
     font-family: "Aladin", . sans-serif;
     font-style: normal;
     font-weight: light;
-    font-size: 150px;
+    font-size: 130px;
     line-height: 353px;
     display: flex;
     align-items: center;
@@ -279,6 +283,36 @@
     margin: 10px
   }
 
+
+.centerme {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.columnme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+
+
+.button button {
+  background-color: #FF7000;
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 3px 5px 30px 300px;
+}
+
+
   .Fans_Section {
     height: 700px;
     display: flex;
@@ -306,7 +340,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFEE9B;
+    color: #FF7000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
     margin: 5%;
   }
@@ -322,7 +356,7 @@
     width: 300%;
     font-family: "Noticia Text", serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     display: flex;
@@ -334,6 +368,9 @@
     margin: 5%;
   }
 
+  .Fancolumn p{
+margin: 5px 30px 10px 5px;
+  }
 
   footer {
     width: 100%;
@@ -341,7 +378,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    background: #FF7000;
+    background: #02ACF0;
     margin: 0 auto;
   }
 
