@@ -16,6 +16,7 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
   }
 
   /*
@@ -162,8 +163,13 @@
     overflow: none;
   }
 
+
+/* I updated the header font to Aladin and gave it some letter spacing of 10px in order to space out the text like you have in your design. */
+
   .hero_cta {
     text-align: center;
+    font-family: 'Aladin', serif;
+    letter-spacing: 10px;
   }
 
 
@@ -202,9 +208,13 @@
     width: 300px;
   }
 
+
+/* Got rid of the big margin around the paragraph in order to bring the "Who are the Beatles?" text closer to the paragraph. I kept the paragraph at 80% and added some internal padding on the right to keep it away from the browser window. */
+
   #Paragraph1 {
-    margin: 50px;
-    justify-content: center;
+    width: 80%;
+    padding-right: 5%;
+    font-family: 'Maven Pro', sans-serif;;
   }
 
   .About_Section {
@@ -217,12 +227,16 @@
     display: flex;
   }
 
+
+/* I added some margin around sectionbox in order to give it some breathing room. */
+
   .Sectionbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding: 2%;
+    margin: 2%;
   }
 
   .Tour_Sec {
@@ -240,29 +254,26 @@
     overflow: none;
   }
 
+
+/* Updated some of the styles (got rid of the positioning elements) to help center the header on the page.*/
+
   .Section_2 h3 {
-    width: 297px;
-    height: 118px;
-    left: 588px;
-    top: 1525px;
     font-family: "Aladin", sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 110px;
     line-height: 135px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: #FF9AD6;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.65);
   }
 
   .Tour_dates {
-    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 5%;
+    margin: 4%;
     font-family: "Maven Pro", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -272,15 +283,20 @@
     color: #000000;
   }
 
+
+/* added some styles to get the columns to show up correctly. */
+
   #P1,
   #P2 {
-    width: 25%;
+    width: 100%;
+    min-width: 300px;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px
+    margin: 0%;
   }
 
 
@@ -289,6 +305,14 @@
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
+  flex-direction: row;
+}
+
+
+.centerme_testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0 3% 0;
   flex-direction: row;
 }
 
@@ -301,23 +325,51 @@
 }
 
 
+/* renamed class to "buttonsection" this will create less confusion with the button element. */
+.buttonsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  width: 100%;
+}
 
-.button button {
+/* Added some styles to the actual button to have it mimic your design */
+.buttonsection button {
+  font-family: 'Maven Pro', sans-serif;
   background-color: #FF7000;
+  border-radius: 35px;
   font-size: 16px;
   border: none;
   color: white;
-  padding: 15px 25px;
+  padding: 15px 45px;
   text-align: center;
-  margin: 3px 5px 30px 300px;
 }
+
+/* Added new section for the Fans Header to show up in the dark orange and targeted the h3 in the section. Got rid a lot of the positioning styling. */
+.Fans_Header{
+  background-color: #FF7000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Fans_Header h3{
+  font-family: "Aladin", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 118px;
+  color: #FFEE9B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+  margin: 5%;
+
 
 
   .Fans_Section {
-    height: 700px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0 auto;
     background-image: url('../img/hero section 3.png');
     background-position: center;
@@ -326,6 +378,12 @@
     overflow: none;
     padding: 100px
   }
+
+
+/* added this class to the submarine images in order to give them some space. */
+.breathingroom{
+  margin: 15px;
+}
 
   .Fans {
     width: 384px;
@@ -337,8 +395,14 @@
     font-weight: normal;
     font-size: 96px;
     line-height: 118px;
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+/* Updated styles in this (added missing font family) in order to get them aligned. */
+  .Fancolumn {
+    width: 100%;
+    min-height: 550px;
     text-align: center;
     color: #FF7000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
@@ -360,6 +424,17 @@
     font-size: 16px;
     line-height: 18px;
     display: flex;
+    color: #000000;
+    flex-direction: column;
+    margin: 5%;
+    align-items: center;
+  }
+
+  .Fancolumn p{
+margin: 5px 30px 10px 5px;
+  }
+
+
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -372,9 +447,10 @@
 margin: 5px 30px 10px 5px;
   }
 
+
   footer {
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-content: center;
