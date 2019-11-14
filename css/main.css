@@ -151,11 +151,11 @@
   }
 
   .Hero {
-    height: 700px;
+    height: 760px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     background-image: url('../img/beatleshero.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -213,8 +213,8 @@
 
   #Paragraph1 {
     width: 80%;
-    padding-right: 5%;
-    font-family: 'Maven Pro', sans-serif;;
+    padding-right: 17%;
+    font-family: 'Maven Pro', sans-serif;
   }
 
   .About_Section {
@@ -273,7 +273,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 4%;
+    margin: 5% 0% 5% 10%;
     font-family: "Maven Pro", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -330,7 +330,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2%;
+  margin: 250% 445% 5% 0;
   width: 100%;
 }
 
@@ -346,6 +346,10 @@
   text-align: center;
 }
 
+.buttonsection button:hover {
+  color: #000000;
+}
+
 /* Added new section for the Fans Header to show up in the dark orange and targeted the h3 in the section. Got rid a lot of the positioning styling. */
 .Fans_Header{
   background-color: #FF7000;
@@ -353,6 +357,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  height: auto;
 }
 
 .Fans_Header h3{
@@ -363,7 +368,9 @@
   line-height: 118px;
   color: #FFEE9B;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
-  margin: 5%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 
@@ -376,7 +383,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: none;
-    padding: 100px
+    padding: 100px;
+    height: 550px;
   }
 
 
@@ -387,7 +395,7 @@
 
   .Fans {
     width: 384px;
-    height: 84px;
+    height: px;
     left: 545px;
     top: 2211px;
     font-family: "Aladin", sans-serif;
@@ -405,7 +413,6 @@
     min-height: 550px;
     text-align: center;
     color: #FF7000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
     margin: 5%;
   }
 
@@ -434,14 +441,6 @@
 margin: 5px 30px 10px 5px;
   }
 
-
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    color: #000000;
-    flex-direction: column;
-    margin: 5%;
-  }
 
   .Fancolumn p{
 margin: 5px 30px 10px 5px;
@@ -573,6 +572,60 @@ margin: 5px 30px 10px 5px;
   (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
+
+
+  @media (min-width: 360px){
+    .hero_cta{
+      font-size: 50px;
+    }
+
+
+    .Hero{
+      height: 500px;
+      display: flex;
+      width: 190%;
+    }
+
+    header {
+      width: 190%;
+      height: auto;
+    }
+
+    .About_Section {
+      width: 184%;
+    }
+
+    #Paragraph1 {
+      width: 150%;
+      padding-right: 5%;
+      font-size: 12px;
+    }
+
+    #title1 h2 {
+      width: 100px;
+      margin: 5%;
+      font-size: 50px;
+      transform: none;
+    }
+
+    .Tour_Sec {
+      width: 189%;
+  }
+
+  .Fans_Section {
+    width: 135%;
+  }
+
+  footer {
+    width: 190%;
+  }
+
+  .Fans_Header{
+    width: 155%;
+  }
+}
+}
+
 
   /* ==========================================================================
      Print styles.
