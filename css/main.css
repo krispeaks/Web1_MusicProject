@@ -405,6 +405,38 @@ footer :hover {
 	clear: both;
 }
 /* ==========================================================================EXAMPLE Media Queries for Responsive Design.These examples override the primary ('mobile first') styles.Modify as content requires.========================================================================== */
+@media screen and (max-width: 1000px) {
+
+	.centerme_testimonials {
+		width: 130%;
+	}
+
+	.columnme{
+		display: flex;
+	align-items: baseline;
+	left: -10px;
+	}
+
+	.buttonsection{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 250% 450% 5% 0%;
+		width: 100%;
+
+	}
+
+
+}
+
+@media screen and (max-width: 1097px) {
+
+	.centerme_testimonials {
+		width: 130%;
+	}
+
+}
+
 
 /* On screens that are 900px wide or less */
 @media screen and (max-width: 900px) {
@@ -412,6 +444,19 @@ footer :hover {
 		flex-direction: column;
 	}
 
+	.Sectionbox{
+		padding: 0px;
+		margin: 0 auto;
+	}
+
+	.centerme{
+		flex-direction: column;
+	}
+
+	.Tour_dates {
+	    margin: 0 auto;
+	    flex-direction: column;
+	}
   #title1{
     transform: rotate(0deg);
   }
@@ -421,7 +466,7 @@ footer :hover {
   }
 
   #Paragraph1 {
-    width: 100%;
+    width: 90%;
     padding-right: 0;
   }
 
@@ -429,8 +474,21 @@ footer :hover {
     width: 30%;
 }
 
+.columnme{
+	align-items: baseline;
+}
+
 .Fans_Section{
-  height: 100%;
+  height: 5%;
+	padding: 0 auto;
+}
+
+.buttonsection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+	width: 100%;
 }
 
 }
@@ -438,10 +496,93 @@ footer :hover {
 /* On screens that are 768px wide or less */
 @media screen and (max-width: 768px) {
 
+	.buttonsection{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 275% 530% 5% 0;
+		width: 200%;
+	}
+
+	.hero_cta {
+		width: 100%;
+		font-family: "Aladin", . sans-serif;
+		font-style: normal;
+		font-weight: light;
+		font-size: 100px;
+		line-height: 353px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.55);
+
+}
 }
 
 /* On screens that are 550px wide or less */
 @media screen and (max-width: 550px) {
+
+	.Fancolumn {
+		width: 300%;
+		font-family: "Noticia Text", serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 18px;
+		display: flex;
+		color: #000000;
+		flex-direction: column;
+		margin: 0px;
+		align-items: center;
+	}
+
+	.centerme_testimonials {
+    width: 50%;
+}
+
+.breathingroom img{
+width: 80px;
+}
+
+.Tour_dates{
+	font-size: 12px;
+}
+
+.hero_cta {
+	width: 100%;
+	font-family: "Aladin", . sans-serif;
+	font-style: normal;
+	font-weight: light;
+	font-size: 50px;
+	line-height: 100px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.55);
+
+
+}
+
+#title1 h2 {
+    font-weight: bold;
+    font-size: 50px;
+	}
+
+
+	.Section_2 h3 {
+    font-family: "Aladin", sans-serif;
+    font-weight: normal;
+    font-size: 65px;
+	}
+
+	.Fans_Header h3 {
+	    font-family: "Aladin", sans-serif;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 65px;
+		}
 
 }
 
