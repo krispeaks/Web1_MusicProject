@@ -177,6 +177,7 @@ nav {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: none;
+	padding: 3%;
 }
 /* Updated some of the styles (got rid of the positioning elements) to help center the header on the page.*/
 .Section_2 h3 {
@@ -194,7 +195,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: 5% 0% 5% 10%;
+	margin: 2%;
 	font-family: "Maven Pro", sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -202,7 +203,10 @@ nav {
 	line-height: 19px;
 	text-align: center;
 	color: #000000;
+	flex-direction: column;
 }
+
+
 /* added some styles to get the columns to show up correctly. */
 #P1,#P2 {
 	width: 100%;
@@ -240,7 +244,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 250% 445% 5% 0;
+	margin: 3%;
 	width: 100%;
 }
 /* Added some styles to the actual button to have it mimic your design */
@@ -293,6 +297,17 @@ nav {
 .breathingroom{
 	margin: 15px;
 }
+
+.squeezeme{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+
 .Fans {
 	width: 384px;
 	height: px;
@@ -307,13 +322,7 @@ nav {
 	width: 100%;
 }
 /* Updated styles in this (added missing font family) in order to get them aligned. */
-.Fancolumn {
-	width: 100%;
-	min-height: 550px;
-	text-align: center;
-	color: #FF7000;
-	margin: 5%;
-}
+
 .Fan_reviews{
 	display: flex;
 	justify-content: center;
@@ -321,7 +330,7 @@ nav {
 	flex-direction: row;
 }
 .Fancolumn {
-	width: 300%;
+	width: 100%;
 	font-family: "Noticia Text", serif;
 	font-style: normal;
 	font-weight: normal;
@@ -332,12 +341,11 @@ nav {
 	flex-direction: column;
 	margin: 5%;
 	align-items: center;
+	min-height: 550px;
+    text-align: center;
 }
 .Fancolumn p{
-	margin: 5px 30px 10px 5px;
-}
-.Fancolumn p{
-	margin: 5px 30px 10px 5px;
+	margin: 5px;
 }
 footer {
 	width: 100%;
@@ -408,7 +416,7 @@ footer :hover {
 @media screen and (max-width: 1000px) {
 
 	.centerme_testimonials {
-		width: 130%;
+		width: 100%;
 	}
 
 	.columnme{
@@ -421,7 +429,7 @@ footer :hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 250% 450% 5% 0%;
+		margin: 3%;
 		width: 100%;
 
 	}
@@ -432,7 +440,7 @@ footer :hover {
 @media screen and (max-width: 1097px) {
 
 	.centerme_testimonials {
-		width: 130%;
+		width: 100%;
 	}
 
 }
@@ -442,6 +450,7 @@ footer :hover {
 @media screen and (max-width: 900px) {
   .Sectionbox,.Fancolumn {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	.Sectionbox{
@@ -471,11 +480,12 @@ footer :hover {
   }
 
   .centerme_testimonials {
-    width: 30%;
+    width: 100%;
 }
 
 .columnme{
-	align-items: baseline;
+	align-items: center;
+
 }
 
 .Fans_Section{
@@ -487,7 +497,7 @@ footer :hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 15px;
+	margin: 3%;
 	width: 100%;
 }
 
@@ -500,8 +510,13 @@ footer :hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 275% 530% 5% 0;
+		margin: 3%;
 		width: 200%;
+	}
+
+	.centerme_testimonials{
+		width: 100%;
+		flex-direction: column;
 	}
 
 	.hero_cta {
@@ -516,15 +531,41 @@ footer :hover {
 		text-align: center;
 		color: #FFFFFF;
 		text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.55);
+}
+}
+/* On screens that are 768px wide or less */
+@media screen and(max-width: 684px){
+
+.Fancolumn {
+	width: 100%;
+	font-family: "Noticia Text", serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	display: flex;
+	color: #000000;
+	flex-direction: column;
+	margin: 0px;
+	align-items: center;
+}
+
+.Fans_Section{
+  height: 5%;
+	padding: 0 auto;
+}
 
 }
-}
+
+
+
+
 
 /* On screens that are 550px wide or less */
 @media screen and (max-width: 550px) {
 
 	.Fancolumn {
-		width: 300%;
+		width: 100%;
 		font-family: "Noticia Text", serif;
 		font-style: normal;
 		font-weight: normal;
@@ -538,7 +579,8 @@ footer :hover {
 	}
 
 	.centerme_testimonials {
-    width: 50%;
+    width: 100%;
+		flex-direction: column;
 }
 
 .breathingroom img{
